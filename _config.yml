@@ -1,0 +1,40 @@
+# Site
+name: "Bilgili Yayıncılık"
+title: "Bilgili Yayıncılık"
+description: "Geçmiş tarihi, bügünü ve yarını romanlarıyla yorumlayan ve bu konuları en iyi şekilde bizlere aktaran yayınevi."
+meta_description: "Bilgili Yayıncılık"
+# dolinkpage: https://e-damla.ams3.digitaloceanspaces.com/damlayayinevi_ornek_sayfalar/
+# mlink: https://www.damlayayinevi.com.tr/go?sku=
+# damla-link: https://www.damlayayinevi.com.tr/mihrabad-yayinlari
+# end: /index.html
+# meserimglink: asseets/images/meser-bas/
+logo: 'assets/img/logo.png'
+baseurl: ''
+email: 'iletisim@dkitap.com'
+# google_analytics: 'UA-53710816-10'
+# disqus: 'mihrabadyayinlari'
+permalink: "/:title/"
+
+
+# Plugins
+plugins: 
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-archives
+        
+# Archives
+jekyll-archives:
+  enabled:
+    - categories
+  layout: archive
+  permalinks:
+    category: '/category/:name/'
+    
+# Other
+markdown: kramdown
+highlighter: rouge
+
+gem:
+    -jekyll-sitemap
