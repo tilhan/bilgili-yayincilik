@@ -1,3 +1,63 @@
+*{
+    font-family: 'Sunshiney', cursive;
+}
+
+.navbar{
+    height: 15vh;
+}
+
 .logo{
     max-width: 10vh;
+}
+
+.book-img-container{
+    height: 85vh;
+}
+
+.book-row{
+    height: 100%;
+}
+
+.book-img-col{
+    max-height: 100%;
+}
+
+.book-img{
+    max-height: 60vh;
+    filter: drop-shadow(1px 5px 5px black);
+    transition: 0.5s;
+}
+
+.book-img:hover{
+    transform: scale(1.03);
+    transition: 0.5s;
+}
+
+.book-text-col{
+    height: 100%;
+}
+
+.post-title{
+    height: 15vh;
+    font-weight: bold;
+    letter-spacing: 4px;
+}
+
+.post-content{
+    height: 30vh;
+    font-size: x-large;
+}
+
+.post-info{
+    height: 30vh;
+}
+
+
+@media(max-width:991px){
+    .post-content{
+        font-size: inherit;
+    }
+    .book-text-col{
+        margin-bottom: 5vh !important;
+    }    
 }

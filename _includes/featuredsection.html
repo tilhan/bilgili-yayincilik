@@ -1,7 +1,33 @@
-<div class="container">
-    <div class="row">
-        <div class="col-12 col-md-6 book-img-col">
-            <img src="{{ site.baseurl }}/{{ post.image }}" alt="">
+<div class="container p-5 book-img-container">
+    <div class="row book-row">
+        <div class="col-12 col-md-6 my-auto text-center book-img-col">
+            <img src="{{ site.baseurl }}/{{ post.image }}" class="book-img img-fluid" alt="{{ post.title }}">
+        </div>
+        <div class="col-12 col-md-6 my-auto text-center book-text-col">
+            <h1 class="post-title">{{ post.title }}</h1>
+            <div class="post-content">{{ post.excerpt | strip_html | truncatewords:40 }}</div>
+            <!-- <div class="post-info">{{ include table.html }}</div> -->
+            <div class="post-info">
+                <table class="table">
+                    <tbody>
+                      <tr>
+                        <th scope="row"></th>
+                        <td>Barkod:</td>
+                        <td>{{ post.barcode }}</td>
+                      </tr>
+                      <tr>
+                        <th scope="row"></th>
+                        <td>Boyut:</td>
+                        <td>{{ post.size }}</td>
+                      </tr>
+                      <tr>
+                        <th scope="row"></th>
+                        <td>Sayfa Sayısı:</td>
+                        <td>{{ post.page-number }}</td>
+                      </tr>
+                    </tbody>
+                  </table>
+            </div>
         </div>
     </div>
 </div>
