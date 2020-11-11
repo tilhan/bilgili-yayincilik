@@ -1,5 +1,44 @@
 ---
 layout: default
-title: Anasayfa
+title: Eser
 ---
 
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            <h1>{{ post.title }}</h1>
+        </div>
+        <div class="col-12 col-md-6">
+            <img src="{{ site.baseurl }}/{{ post.image }}" alt="">
+        </div>
+        <div class="col-12 col-md-6">
+            {{content}}
+        </div>
+        <div class="col-12 post-info">
+            <table class="table">
+                <tbody>
+                    <tr>
+                        <th scope="row"></th>
+                        <td>Barkod:</td>
+                        <td>{{ post.barcode }}</td>
+                    </tr>
+                    <tr>
+                        <th scope="row"></th>
+                        <td>Yazar:</td>
+                        <td>{{ post.author }}</td>
+                    </tr>
+                    <tr>
+                        <th scope="row"></th>
+                        <td>Boyut:</td>
+                        <td>{{ post.size }}</td>
+                    </tr>
+                    <tr>
+                        <th scope="row"></th>
+                        <td>Sayfa Sayısı:</td>
+                        <td>{{ post.page-number }}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

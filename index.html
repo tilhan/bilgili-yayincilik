@@ -2,13 +2,7 @@
 layout: default
 title: Anasayfa
 ---
+{% include featuredsection.html %}
 
-{% for post in site.posts %}
 
-    {% if post.featured == true %}
-
-        {% include featuredsection.html %}
-
-    {% endif %}
-
-{% endfor %}
+{% include soon.html %}

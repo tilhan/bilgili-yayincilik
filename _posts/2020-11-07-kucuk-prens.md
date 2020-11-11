@@ -1,11 +1,13 @@
 ---
 layout: post
 title:  "Küçük Prens"
+author: "Antoine de Saint-Exupery"
 image: assets/img/book-img/kucuk-prens/k-prens.jpg
 barcode: 9786057490407
-size: "21 x 12"
+size: "21 x 12 cm"
 page-number: 112
 featured: true
+digitaloceanlink: false
 ---
 
 Dünyanın en çok satan ve okunan kitaplarından biri... Minik bir kahraman üzerinden masumluğun ve çocukluğun

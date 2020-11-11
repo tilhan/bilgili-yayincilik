@@ -1,11 +1,26 @@
 <div class="container p-5 book-img-container">
     <div class="row book-row">
-        <div class="col-12 col-md-6 my-auto text-center book-img-col">
+      {% for post in site.posts %}
+
+        {% if post.featured == true %}
+          <div class="col-12 col-md-6 my-auto text-center book-img-col">
+          <!-- <a href="{{ site.do-link }}/{{ post.barcode }}/{{ site.do-link-end }}" target="_blank"> -->
             <img src="{{ site.baseurl }}/{{ post.image }}" class="book-img img-fluid" alt="{{ post.title }}">
-        </div>
-        <div class="col-12 col-md-6 my-auto text-center book-text-col">
+          <!-- </a> -->
+            
+          </div>
+          <div class="col-12 col-md-6 my-auto text-center book-text-col">
             <h1 class="post-title">{{ post.title }}</h1>
-            <div class="post-content">{{ post.excerpt | strip_html | truncatewords:40 }}</div>
+            <div class="post-content">{{ post.excerpt | strip_html | truncatewords:40 }}<br>
+
+              {% if post.digitaloceanlink == true %}
+
+                <a class="btn btn-dark examine-button" href="{{ site.do-link }}/{{ post.barcode }}/{{ site.do-link-end }}" 
+                target="_blank" role="button">Sayfaları incele</a>
+      
+              {% endif %}
+            
+            </div>
             <!-- <div class="post-info">{{ include table.html }}</div> -->
             <div class="post-info">
                 <table class="table">
@@ -14,6 +29,11 @@
                         <th scope="row"></th>
                         <td>Barkod:</td>
                         <td>{{ post.barcode }}</td>
+                      </tr>
+                      <tr>
+                        <th scope="row"></th>
+                        <td>Yazar:</td>
+                        <td>{{ post.author }}</td>
                       </tr>
                       <tr>
                         <th scope="row"></th>
@@ -28,6 +48,9 @@
                     </tbody>
                   </table>
             </div>
-        </div>
+          </div>
+        {% endif %}
+
+      {% endfor %}
     </div>
 </div>

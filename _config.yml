@@ -11,8 +11,8 @@ meta_description: "Bilgili Yayıncılık"
 logo: 'assets/img/logo.png'
 baseurl: ''
 email: 'iletisim@dkitap.com'
-# google_analytics: 'UA-53710816-10'
-# disqus: 'mihrabadyayinlari'
+do-link: https://e-damla.ams3.digitaloceanspaces.com/damlayayinevi_ornek_sayfalar
+do-link-end: index.html
 permalink: "/:title/"
 
 

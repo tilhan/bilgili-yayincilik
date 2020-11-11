@@ -2,16 +2,22 @@
     font-family: 'Sunshiney', cursive;
 }
 
+:root {
+    --text: #2B3044;
+    --line: #BBC1E1;
+    --line-active: #275EFE;
+}
+
+body{
+    transition: 0.5s;
+}
+
 .navbar{
     height: 15vh;
 }
 
 .logo{
     max-width: 10vh;
-}
-
-.book-img-container{
-    height: 85vh;
 }
 
 .book-row{
@@ -25,12 +31,18 @@
 .book-img{
     max-height: 60vh;
     filter: drop-shadow(1px 5px 5px black);
+    transform: scale(0.9);
     transition: 0.5s;
 }
 
 .book-img:hover{
-    transform: scale(1.03);
-    transition: 0.5s;
+    transform: scale(1.001);
+    /* transition: 0.5s; */
+}
+
+.soon-book-img {
+    max-height: 60vh;
+    transform: scale(0.9);
 }
 
 .book-text-col{
@@ -38,7 +50,6 @@
 }
 
 .post-title{
-    height: 15vh;
     font-weight: bold;
     letter-spacing: 4px;
 }
@@ -48,16 +59,62 @@
     font-size: x-large;
 }
 
-.post-info{
-    height: 30vh;
+.examine-button{
+    font-family: 'Courier New', Courier, monospace !important;
+    margin-top: 2vh;
 }
 
+.soon-row{
+    height: 100%;
+}
+
+.soon-title{
+    color: rgb(41, 40, 40);
+}
+
+h3 {
+    font-size: 1.4rem !important;
+    margin: 0;
+    color: var(--text);
+  }
+  h3 a {
+    display: inline-block;
+    position: relative;
+    text-decoration: none !important;
+    color: inherit !important;
+    margin: 0 var(--spacing, 0px);
+    -webkit-transition: margin .25s;
+    transition: margin .25s;
+  }
+  h3 a svg {
+    width: 200px;
+    height: 100px;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    -webkit-transform: translate(-50%, 20px) translateZ(0);
+    transform: translate(-50%, 20px) translateZ(0);
+    fill: none;
+    stroke: var(--stroke, var(--line));
+    stroke-linecap: round;
+    stroke-width: 1px;
+    stroke-dasharray: var(--offset, 69px) 278px;
+    stroke-dashoffset: 361px;
+    -webkit-transition: stroke 0.25s ease var(--stroke-delay, 0s), stroke-dasharray 0.35s;
+    transition: stroke 0.25s ease var(--stroke-delay, 0s), stroke-dasharray 0.35s;
+  }
+  h3 a:hover {
+    --spacing: 4px;
+    --stroke: var(--line-active);
+    --stroke-delay: .1s;
+    --offset: 180px;
+  }
 
 @media(max-width:991px){
     .post-content{
         font-size: inherit;
     }
     .book-text-col{
-        margin-bottom: 5vh !important;
+        padding-top: 5vh !important;
     }    
 }
