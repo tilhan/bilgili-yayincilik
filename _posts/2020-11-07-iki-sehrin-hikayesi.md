@@ -1,4 +1,5 @@
 ---
+modal-id: b7
 layout: post
 title:  "İki Şehrin Hikâyesi"
 image: assets/img/book-img/iki-sehrin-hikayesi/s-hikayesi.jpg

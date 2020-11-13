@@ -1,9 +1,9 @@
 ---
-modal-id: b14
+modal-id: b4
 layout: post
-title:  "Vadideki Zambak"
-image: assets/img/book-img/vadideki-zambak/v-zambak.jpg
-author: "Balzac"
+title:  "Denizler Altında 20.000 Fersah"
+image: assets/img/book-img/denizler-altinda-fersah/ybin-fersah.jpg
+author: "Jules Verne"
 barcode: 9789783817746
 size: "21 x 12 cm"
 page-number: 112

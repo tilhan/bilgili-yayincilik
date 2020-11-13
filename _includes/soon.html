@@ -1,22 +1,37 @@
 <div class="container mt-3 soon-container">
     <div class="row soon-row">
+        <div class="col-12 text-center soon-title">
+            <h2>Çok Yakında</h2>
+        </div>
         {% for post in site.posts %}
 
             {% if post.soon == true %}
 
 
-                    <div class="col-6 col-md-3 text-center">
+                <div class="col-6 col-md-3 mt-5 soon-col text-center" data-toggle="modal" data-target="#{{ post.modal-id }}">
                     <h3 class="soon-title">
-                        <a href="{{ post.url | absolute_url }}">{{ post.title }}
+                        {{ post.title }}
                             <svg viewBox="0 0 70 36">
                                 <path d="M6.9739 30.8153H63.0244C65.5269 30.8152 75.5358 -3.68471 35.4998 2.81531C-16.1598 11.2025 0.894099 33.9766 26.9922 34.3153C104.062 35.3153 54.5169 -6.68469 23.489 9.31527" />
                             </svg>
-                            
-                        </a>
                     </h3>
                     <img src="{{ site.baseurl }}/{{ post.image }}" class="soon-book-img img-fluid" alt="{{ post.title }}">
+                </div>
 
-            </div>
+                <div class="modal fade" id="{{ post.modal-id }}" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="{{ site.baseurl }}/{{ post.image }}" class="img-fluid" alt="{{ post.title }}">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
 
 
             {% endif %}

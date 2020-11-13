@@ -1,9 +1,9 @@
 ---
-modal-id: b14
+modal-id: b3
 layout: post
-title:  "Vadideki Zambak"
-image: assets/img/book-img/vadideki-zambak/v-zambak.jpg
-author: "Balzac"
+title:  "Balonla Beş Hafta"
+image: assets/img/book-img/balonla-bes-hafta/bbes-hafta.jpg
+author: "Jules Verne"
 barcode: 9789783817746
 size: "21 x 12 cm"
 page-number: 112

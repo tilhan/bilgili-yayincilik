@@ -1,4 +1,5 @@
 ---
+modal-id: b12
 layout: post
 title:  "Savaş ve Barış"
 image: assets/img/book-img/savas-ve-baris/s-baris.jpg

@@ -1,9 +1,9 @@
 ---
-modal-id: b14
+modal-id: b10
 layout: post
-title:  "Vadideki Zambak"
-image: assets/img/book-img/vadideki-zambak/v-zambak.jpg
-author: "Balzac"
+title:  "On Beş Yaşında Bir Kaptan"
+image: assets/img/book-img/onbesyasinda-kaptan/y-kaptan.jpg
+author: "Jules Verne"
 barcode: 9789783817746
 size: "21 x 12 cm"
 page-number: 112

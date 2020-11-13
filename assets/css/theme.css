@@ -24,6 +24,10 @@ body{
     height: 100%;
 }
 
+.book-img-container{
+    height: 85vh;
+}
+
 .book-img-col{
     max-height: 100%;
 }
@@ -38,6 +42,10 @@ body{
 .book-img:hover{
     transform: scale(1.001);
     /* transition: 0.5s; */
+}
+
+.soon-col:hover{
+    cursor: pointer;
 }
 
 .soon-book-img {
@@ -72,12 +80,27 @@ body{
     color: rgb(41, 40, 40);
 }
 
+.modal-header{
+    border-bottom: 0px solid #dee2e6 !important;
+}
+
+.modal-header .close {
+    padding: 0.8rem !important;
+    background-color: white !important;
+    border-radius: 15% !important;
+}
+
+.modal-content{
+        background-color: rgba(255, 255, 255, 0) !important; 
+        border: 0px solid rgba(0,0,0,.2) !important;
+}
+
 h3 {
     font-size: 1.4rem !important;
     margin: 0;
     color: var(--text);
   }
-  h3 a {
+  h3 {
     display: inline-block;
     position: relative;
     text-decoration: none !important;
@@ -86,7 +109,7 @@ h3 {
     -webkit-transition: margin .25s;
     transition: margin .25s;
   }
-  h3 a svg {
+  h3 svg {
     width: 200px;
     height: 100px;
     position: absolute;
@@ -103,7 +126,7 @@ h3 {
     -webkit-transition: stroke 0.25s ease var(--stroke-delay, 0s), stroke-dasharray 0.35s;
     transition: stroke 0.25s ease var(--stroke-delay, 0s), stroke-dasharray 0.35s;
   }
-  h3 a:hover {
+  h3:hover {
     --spacing: 4px;
     --stroke: var(--line-active);
     --stroke-delay: .1s;
@@ -114,7 +137,13 @@ h3 {
     .post-content{
         font-size: inherit;
     }
+    .book-img-container {
+        height: 100% !important;
+    }
     .book-text-col{
         padding-top: 5vh !important;
-    }    
+    }
+    h3 {
+        font-size: 1.2rem !important;    
+    }
 }
