@@ -9,7 +9,7 @@ meta_description: "Bilgili Yayıncılık"
 # end: /index.html
 # meserimglink: asseets/images/meser-bas/
 logo: 'assets/img/logo.png'
-baseurl: ''
+baseurl: '/'
 email: 'iletisim@dkitap.com'
 do-link: https://e-damla.ams3.digitaloceanspaces.com/damlayayinevi_ornek_sayfalar
 do-link-end: index.html
